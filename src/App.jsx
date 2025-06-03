@@ -1,33 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Conditional from "./components/Rendering/Conditional"
+import Demo from "./components/Demo"
+import LogicalAndAndRendering from "./components/Rendering/LogicalAndAndRendering"
+import RenderingSwitchStatement from "./components/Rendering/RenderingSwitchStatement"
+import TernaryOperator from "./components/Rendering/TernaryOperator"
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1 className="pb-8">Welcom React</h1>
+      {/* <Demo /> */}
+      {/* <Conditional /> */}
+ {/* <RenderingSwitchStatement /> */}
+   {/* <TernaryOperator /> */}
+   <LogicalAndAndRendering />
+      {/* <button className="bg-amber-400 text-white p-2 rounded-2xl" onClick={()=> alert("Hello user")}>Click Alert</button> */}
     </>
   )
 }
